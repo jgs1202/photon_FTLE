@@ -88,7 +88,7 @@ void checkMinus(float *vec){
 }
 
 bool checkRangeInt(int x, int side){
-    if ((x >= 0) && (x <= side - 1)){
+    if ((x >= 0) && (x < side)){
         return true;
     } else {
         return false;
@@ -96,11 +96,11 @@ bool checkRangeInt(int x, int side){
 }
 
 bool checkPosition(int x, int y, int z, int side) {
-    if ((x < 0) || (x > side - 1)){
+    if ((x < 0) || (x >= side)){
         return false;
-    } else if ((y < 0) || (y > side - 1)) {
+    } else if ((y < 0) || (y >= side)) {
         return false;
-    } else if ((z < 0) || (z > side - 1)) {
+    } else if ((z < 0) || (z >= side)) {
         return false;
     } else {
         return true;
@@ -111,8 +111,8 @@ float checkRange(float x, int side){
     float c = x;
     if (x < 0){
         c = 0;
-    } else if (x > side - 1){
-        c = side - 1;
+    } else if (x >= side){
+        c = side - 0.01;
     }
     return c;
 }
@@ -124,4 +124,16 @@ float gaussFunc(float x) {
 
 float exponential(float x) {
     return exp(x);
+}
+
+float myabs(float x) {
+    if (x - floor(x) < 0.5) {
+        return floor(x);
+    } else {
+        return floor(x + 1);
+    }
+}
+
+float normFlobenius22 (float a00, float a01, float a10, float a11) {
+    return sqrt(a00 * a00 + a01 * a01 + a10 * a10 + a11 * a11);
 }

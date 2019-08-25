@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/System/Library/Frameworks -I/Users/Aoyama/CLionProjects/ftle-photon/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I"/Users/Aoyama/CLionProjects/ftle-photon/'/usr/loca/include/'" -I/usr/local/Frameworks/Python.framework/Versions/3.7/include/python3.7m -I/Users/Aoyama/CLionProjects/ftle-photon -isystem /usr/local/include -isystem /usr/local/include/opencv 
 

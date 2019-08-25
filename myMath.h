@@ -6,8 +6,8 @@
 #define REFRACTION_OPENCL_MYMATH_H
 
 float roundInt (float x);
-float slope2 (float p1, float p2);
-float slope3 (float p1, float p2, float p3);
+float slope2 (float p1, float p2, int WIDTH);
+float slope3 (float p1, float p2, float p3, int WIDTH);
 bool checkInteger(float *vec);
 unsigned long pointerVectorCoordinateFloat(float *coordinate, int WIDTH);
 unsigned long pointerVectorCoordinateInt(int *coordinate, int WIDTH);
@@ -27,5 +27,7 @@ float checkRange(float x, int side);
 float gaussFunc(float x);
 float exponential(float x);
 bool checkPosition(int x, int y, int z, int side);
+float myabs(float x);
+float normFlobenius22 (float a00, float a01, float a10, float a11);
 
 #endif //REFRACTION_OPENCL_MYMATH_H

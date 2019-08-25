@@ -177,6 +177,60 @@ geometry.cpp.s:
 	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/geometry.cpp.s
 .PHONY : geometry.cpp.s
 
+gpuSetting.o: gpuSetting.cpp.o
+
+.PHONY : gpuSetting.o
+
+# target to build an object file
+gpuSetting.cpp.o:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o
+.PHONY : gpuSetting.cpp.o
+
+gpuSetting.i: gpuSetting.cpp.i
+
+.PHONY : gpuSetting.i
+
+# target to preprocess a source file
+gpuSetting.cpp.i:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/gpuSetting.cpp.i
+.PHONY : gpuSetting.cpp.i
+
+gpuSetting.s: gpuSetting.cpp.s
+
+.PHONY : gpuSetting.s
+
+# target to generate assembly for a file
+gpuSetting.cpp.s:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/gpuSetting.cpp.s
+.PHONY : gpuSetting.cpp.s
+
+gradient.o: gradient.cpp.o
+
+.PHONY : gradient.o
+
+# target to build an object file
+gradient.cpp.o:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/gradient.cpp.o
+.PHONY : gradient.cpp.o
+
+gradient.i: gradient.cpp.i
+
+.PHONY : gradient.i
+
+# target to preprocess a source file
+gradient.cpp.i:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/gradient.cpp.i
+.PHONY : gradient.cpp.i
+
+gradient.s: gradient.cpp.s
+
+.PHONY : gradient.s
+
+# target to generate assembly for a file
+gradient.cpp.s:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/gradient.cpp.s
+.PHONY : gradient.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -230,6 +284,33 @@ myMath.s: myMath.cpp.s
 myMath.cpp.s:
 	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/myMath.cpp.s
 .PHONY : myMath.cpp.s
+
+photonParticipate.o: photonParticipate.cpp.o
+
+.PHONY : photonParticipate.o
+
+# target to build an object file
+photonParticipate.cpp.o:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o
+.PHONY : photonParticipate.cpp.o
+
+photonParticipate.i: photonParticipate.cpp.i
+
+.PHONY : photonParticipate.i
+
+# target to preprocess a source file
+photonParticipate.cpp.i:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/photonParticipate.cpp.i
+.PHONY : photonParticipate.cpp.i
+
+photonParticipate.s: photonParticipate.cpp.s
+
+.PHONY : photonParticipate.s
+
+# target to generate assembly for a file
+photonParticipate.cpp.s:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/photonParticipate.cpp.s
+.PHONY : photonParticipate.cpp.s
 
 photonSetting.o: photonSetting.cpp.o
 
@@ -285,6 +366,33 @@ variables.cpp.s:
 	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/variables.cpp.s
 .PHONY : variables.cpp.s
 
+visResult.o: visResult.cpp.o
+
+.PHONY : visResult.o
+
+# target to build an object file
+visResult.cpp.o:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/visResult.cpp.o
+.PHONY : visResult.cpp.o
+
+visResult.i: visResult.cpp.i
+
+.PHONY : visResult.i
+
+# target to preprocess a source file
+visResult.cpp.i:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/visResult.cpp.i
+.PHONY : visResult.cpp.i
+
+visResult.s: visResult.cpp.s
+
+.PHONY : visResult.s
+
+# target to generate assembly for a file
+visResult.cpp.s:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/visResult.cpp.s
+.PHONY : visResult.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,18 +408,30 @@ help:
 	@echo "... geometry.o"
 	@echo "... geometry.i"
 	@echo "... geometry.s"
+	@echo "... gpuSetting.o"
+	@echo "... gpuSetting.i"
+	@echo "... gpuSetting.s"
+	@echo "... gradient.o"
+	@echo "... gradient.i"
+	@echo "... gradient.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... myMath.o"
 	@echo "... myMath.i"
 	@echo "... myMath.s"
+	@echo "... photonParticipate.o"
+	@echo "... photonParticipate.i"
+	@echo "... photonParticipate.s"
 	@echo "... photonSetting.o"
 	@echo "... photonSetting.i"
 	@echo "... photonSetting.s"
 	@echo "... variables.o"
 	@echo "... variables.i"
 	@echo "... variables.s"
+	@echo "... visResult.o"
+	@echo "... visResult.i"
+	@echo "... visResult.s"
 .PHONY : help
 
 

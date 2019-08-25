@@ -21,6 +21,7 @@ public:
     float *grad2D, *fColor2D, *fOpacity2D, *fRefractivity2D;
     float *lColor2D, *lDirection2D, *lIntensity2d;
     float *photonIrradiance2D, *photonPosition2D, *photonDirection2D, *photonGradDirection2D, *photonColor2D;
+    float *photonDestinatePosition, *photonDestinateDirection;
 
 
     variables(void);

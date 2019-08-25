@@ -5,7 +5,7 @@
 		<Option title="ftle_photon"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug"/>
@@ -44,11 +44,17 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Users/Aoyama/CLionProjects/ftle-photon/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework"/>
+					<Add directory="/Users/Aoyama/CLionProjects/ftle-photon/&apos;/usr/loca/include/&apos;"/>
+					<Add directory="/usr/local/Frameworks/Python.framework/Versions/3.7/include/python3.7m"/>
+					<Add directory="/Users/Aoyama/CLionProjects/ftle-photon"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
@@ -65,11 +71,17 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Users/Aoyama/CLionProjects/ftle-photon/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework"/>
+					<Add directory="/Users/Aoyama/CLionProjects/ftle-photon/&apos;/usr/loca/include/&apos;"/>
+					<Add directory="/usr/local/Frameworks/Python.framework/Versions/3.7/include/python3.7m"/>
+					<Add directory="/Users/Aoyama/CLionProjects/ftle-photon"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
@@ -89,6 +101,15 @@
 		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/geometry.cpp">
 			<Option target="ftle_photon"/>
 		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/gpuSetting.cpp">
+			<Option target="ftle_photon"/>
+		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/gpuSetting.h">
+			<Option target="ftle_photon"/>
+		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/gradient.cpp">
+			<Option target="ftle_photon"/>
+		</Unit>
 		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/main.cpp">
 			<Option target="ftle_photon"/>
 		</Unit>
@@ -96,6 +117,9 @@
 			<Option target="ftle_photon"/>
 		</Unit>
 		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/myMath.h">
+			<Option target="ftle_photon"/>
+		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/photonParticipate.cpp">
 			<Option target="ftle_photon"/>
 		</Unit>
 		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/photonSetting.cpp">
@@ -107,8 +131,23 @@
 		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/variables.h">
 			<Option target="ftle_photon"/>
 		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/visResult.cpp">
+			<Option target="ftle_photon"/>
+		</Unit>
 		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/Aoyama/CLionProjects/ftle-photon/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

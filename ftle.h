@@ -21,9 +21,22 @@ public:
     void squareObject(void);
     void makeGeometry2D(void);
 
-    // photonSetting;
-    void photonPlace(void);
+    // gradient
+    void gradRefraction2D(void);
+    void gradSmooth2D(unsigned int kernelSz);
+    void gradVectorField2D(float *data2D, std::vector<float>& norm);
+
+    // photonSetting
+    void photonInit(void);
     void photonSetting(void);
+
+    // photonParicipate
+    void trilinearTrace(float x, float y, float z, bool flag2D, float *gradient, float *opacity);
+    void trace3d(int photon);
+    void photonDestinate(void);
+
+    // visResult
+    void visualize2D(void);
 };
 
 #endif //FTLE_PHOTON_FTLE_H

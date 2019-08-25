@@ -135,6 +135,58 @@ CMakeFiles/ftle_photon.dir/myMath.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ftle_photon.dir/myMath.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aoyama/CLionProjects/ftle-photon/myMath.cpp -o CMakeFiles/ftle_photon.dir/myMath.cpp.s
 
+CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o: CMakeFiles/ftle_photon.dir/flags.make
+CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o: ../gpuSetting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o -c /Users/Aoyama/CLionProjects/ftle-photon/gpuSetting.cpp
+
+CMakeFiles/ftle_photon.dir/gpuSetting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ftle_photon.dir/gpuSetting.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aoyama/CLionProjects/ftle-photon/gpuSetting.cpp > CMakeFiles/ftle_photon.dir/gpuSetting.cpp.i
+
+CMakeFiles/ftle_photon.dir/gpuSetting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ftle_photon.dir/gpuSetting.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aoyama/CLionProjects/ftle-photon/gpuSetting.cpp -o CMakeFiles/ftle_photon.dir/gpuSetting.cpp.s
+
+CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o: CMakeFiles/ftle_photon.dir/flags.make
+CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o: ../photonParticipate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o -c /Users/Aoyama/CLionProjects/ftle-photon/photonParticipate.cpp
+
+CMakeFiles/ftle_photon.dir/photonParticipate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ftle_photon.dir/photonParticipate.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aoyama/CLionProjects/ftle-photon/photonParticipate.cpp > CMakeFiles/ftle_photon.dir/photonParticipate.cpp.i
+
+CMakeFiles/ftle_photon.dir/photonParticipate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ftle_photon.dir/photonParticipate.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aoyama/CLionProjects/ftle-photon/photonParticipate.cpp -o CMakeFiles/ftle_photon.dir/photonParticipate.cpp.s
+
+CMakeFiles/ftle_photon.dir/gradient.cpp.o: CMakeFiles/ftle_photon.dir/flags.make
+CMakeFiles/ftle_photon.dir/gradient.cpp.o: ../gradient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ftle_photon.dir/gradient.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ftle_photon.dir/gradient.cpp.o -c /Users/Aoyama/CLionProjects/ftle-photon/gradient.cpp
+
+CMakeFiles/ftle_photon.dir/gradient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ftle_photon.dir/gradient.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aoyama/CLionProjects/ftle-photon/gradient.cpp > CMakeFiles/ftle_photon.dir/gradient.cpp.i
+
+CMakeFiles/ftle_photon.dir/gradient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ftle_photon.dir/gradient.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aoyama/CLionProjects/ftle-photon/gradient.cpp -o CMakeFiles/ftle_photon.dir/gradient.cpp.s
+
+CMakeFiles/ftle_photon.dir/visResult.cpp.o: CMakeFiles/ftle_photon.dir/flags.make
+CMakeFiles/ftle_photon.dir/visResult.cpp.o: ../visResult.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ftle_photon.dir/visResult.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ftle_photon.dir/visResult.cpp.o -c /Users/Aoyama/CLionProjects/ftle-photon/visResult.cpp
+
+CMakeFiles/ftle_photon.dir/visResult.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ftle_photon.dir/visResult.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aoyama/CLionProjects/ftle-photon/visResult.cpp > CMakeFiles/ftle_photon.dir/visResult.cpp.i
+
+CMakeFiles/ftle_photon.dir/visResult.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ftle_photon.dir/visResult.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aoyama/CLionProjects/ftle-photon/visResult.cpp -o CMakeFiles/ftle_photon.dir/visResult.cpp.s
+
 # Object files for target ftle_photon
 ftle_photon_OBJECTS = \
 "CMakeFiles/ftle_photon.dir/main.cpp.o" \
@@ -142,7 +194,11 @@ ftle_photon_OBJECTS = \
 "CMakeFiles/ftle_photon.dir/ftle.cpp.o" \
 "CMakeFiles/ftle_photon.dir/geometry.cpp.o" \
 "CMakeFiles/ftle_photon.dir/photonSetting.cpp.o" \
-"CMakeFiles/ftle_photon.dir/myMath.cpp.o"
+"CMakeFiles/ftle_photon.dir/myMath.cpp.o" \
+"CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o" \
+"CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o" \
+"CMakeFiles/ftle_photon.dir/gradient.cpp.o" \
+"CMakeFiles/ftle_photon.dir/visResult.cpp.o"
 
 # External object files for target ftle_photon
 ftle_photon_EXTERNAL_OBJECTS =
@@ -153,9 +209,30 @@ ftle_photon: CMakeFiles/ftle_photon.dir/ftle.cpp.o
 ftle_photon: CMakeFiles/ftle_photon.dir/geometry.cpp.o
 ftle_photon: CMakeFiles/ftle_photon.dir/photonSetting.cpp.o
 ftle_photon: CMakeFiles/ftle_photon.dir/myMath.cpp.o
+ftle_photon: CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o
+ftle_photon: CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o
+ftle_photon: CMakeFiles/ftle_photon.dir/gradient.cpp.o
+ftle_photon: CMakeFiles/ftle_photon.dir/visResult.cpp.o
 ftle_photon: CMakeFiles/ftle_photon.dir/build.make
+ftle_photon: /usr/local/lib/libopencv_dnn.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_highgui.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_ml.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_objdetect.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_shape.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_stitching.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_superres.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_videostab.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_calib3d.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_features2d.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_flann.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_photo.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_video.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_videoio.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_imgcodecs.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_imgproc.3.4.6.dylib
+ftle_photon: /usr/local/lib/libopencv_core.3.4.6.dylib
 ftle_photon: CMakeFiles/ftle_photon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ftle_photon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ftle_photon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ftle_photon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
