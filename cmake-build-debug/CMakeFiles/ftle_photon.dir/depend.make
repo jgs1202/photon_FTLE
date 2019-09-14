@@ -25,6 +25,10 @@ CMakeFiles/ftle_photon.dir/myMath.cpp.o: ../myMath.cpp
 CMakeFiles/ftle_photon.dir/myMath.cpp.o: ../myMath.h
 CMakeFiles/ftle_photon.dir/myMath.cpp.o: ../variables.h
 
+CMakeFiles/ftle_photon.dir/output.cpp.o: ../ftle.h
+CMakeFiles/ftle_photon.dir/output.cpp.o: ../output.cpp
+CMakeFiles/ftle_photon.dir/output.cpp.o: ../variables.h
+
 CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o: ../ftle.h
 CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o: ../myMath.h
 CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o: ../photonParticipate.cpp

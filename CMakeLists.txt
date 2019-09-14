@@ -23,7 +23,7 @@ find_package(boost 1.57.0 COMPONENTS system filesystem REQUIRED)
 include_directories(${boost_INCLUDE_DIRS})
 message(STATUS "boost_INCLUDE_DIRS: ${boost_INCLUDE_DIRS}")
 
-add_executable(ftle_photon main.cpp variables.cpp variables.h ftle.cpp geometry.cpp photonSetting.cpp myMath.cpp gpuSetting.cpp photonParticipate.cpp gradient.cpp visResult.cpp)
+add_executable(ftle_photon main.cpp variables.cpp variables.h ftle.cpp geometry.cpp photonSetting.cpp myMath.cpp gpuSetting.cpp photonParticipate.cpp gradient.cpp visResult.cpp output.cpp)
 
 target_include_directories (ftle_photon PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(ftle_photon "/System/Library/Frameworks/GLUT.framework" "/System/Library/Frameworks/openGL.framework" ${OpenCL_LIBRARY} ${OpenCV_LIBS})

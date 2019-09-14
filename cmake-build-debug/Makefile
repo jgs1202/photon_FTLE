@@ -285,6 +285,33 @@ myMath.cpp.s:
 	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/myMath.cpp.s
 .PHONY : myMath.cpp.s
 
+output.o: output.cpp.o
+
+.PHONY : output.o
+
+# target to build an object file
+output.cpp.o:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/output.cpp.o
+.PHONY : output.cpp.o
+
+output.i: output.cpp.i
+
+.PHONY : output.i
+
+# target to preprocess a source file
+output.cpp.i:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/output.cpp.i
+.PHONY : output.cpp.i
+
+output.s: output.cpp.s
+
+.PHONY : output.s
+
+# target to generate assembly for a file
+output.cpp.s:
+	$(MAKE) -f CMakeFiles/ftle_photon.dir/build.make CMakeFiles/ftle_photon.dir/output.cpp.s
+.PHONY : output.cpp.s
+
 photonParticipate.o: photonParticipate.cpp.o
 
 .PHONY : photonParticipate.o
@@ -420,6 +447,9 @@ help:
 	@echo "... myMath.o"
 	@echo "... myMath.i"
 	@echo "... myMath.s"
+	@echo "... output.o"
+	@echo "... output.i"
+	@echo "... output.s"
 	@echo "... photonParticipate.o"
 	@echo "... photonParticipate.i"
 	@echo "... photonParticipate.s"

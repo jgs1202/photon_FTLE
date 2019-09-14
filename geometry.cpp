@@ -33,8 +33,30 @@ void ftle::squareObject() {
     }
 }
 
+void ftle::sphereObject() {
+    float black[] = {0., 0., 0.}, opacity = 0.1, refraction = 1.5;
+    float center[] = {60., 50., 0.}, radius = 15;
+    for (int y=0; y<data.WIDTH; ++y) {
+        for (int x=0; x<data.WIDTH; ++x) {
+            if ((x - center[0]) * (x - center[0]) + (y - center[1]) * (y - center[1]) < radius * radius) {
+                data.fColor2D[(x + y * data.WIDTH) * 3 + 0] = black[0];
+                data.fColor2D[(x + y * data.WIDTH) * 3 + 1] = black[1];
+                data.fColor2D[(x + y * data.WIDTH) * 3 + 2] = black[2];
+                data.fOpacity2D[x + y * data.WIDTH] = opacity;
+                data.fRefractivity2D[x + y * data.WIDTH] = refraction;
+            }
+        }
+    }
+}
+
 void ftle::makeGeometry2D() {
-    std::memset(data.grad2D, 0, sizeof data.grad2D);
+    std::memset(data.grad2D, 0., sizeof data.grad2D);
+    std::memset(data.fRefractivity2D, 1., sizeof data.fRefractivity2D);
+
+    for (int p=0; p<data.PLAINSZ; ++p) {
+        data.fRefractivity2D[p] = 1.;
+    }
     surroundWall();
-    squareObject();
+//    squareObject();
+    sphereObject();
 }

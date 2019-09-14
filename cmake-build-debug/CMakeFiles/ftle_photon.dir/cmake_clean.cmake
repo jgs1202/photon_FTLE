@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o"
   "CMakeFiles/ftle_photon.dir/gradient.cpp.o"
   "CMakeFiles/ftle_photon.dir/visResult.cpp.o"
+  "CMakeFiles/ftle_photon.dir/output.cpp.o"
   "ftle_photon.pdb"
   "ftle_photon"
 )

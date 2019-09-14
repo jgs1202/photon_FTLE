@@ -28,6 +28,9 @@ variables::variables() {
     photonColor2D = (float *)malloc(sizeof(float) * maxPhoton2D * 3);
     photonDestinatePosition = (float *)malloc(sizeof(float) * maxPhoton2D * 3);
     photonDestinateDirection = (float *)malloc(sizeof(float) * maxPhoton2D * 3);
+
+    normPosition = (float *)malloc(sizeof(float) * maxPhoton2D);
+    normDirection = (float *)malloc(sizeof(float) * maxPhoton2D);
 }
 
 variables::~variables() {
@@ -43,4 +46,6 @@ variables::~variables() {
     free(photonDirection2D);
     free(photonGradDirection2D);
     free(photonColor2D);
+    free(normDirection);
+    free(normPosition);
 }

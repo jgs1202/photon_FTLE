@@ -22,6 +22,7 @@ public:
     float *lColor2D, *lDirection2D, *lIntensity2d;
     float *photonIrradiance2D, *photonPosition2D, *photonDirection2D, *photonGradDirection2D, *photonColor2D;
     float *photonDestinatePosition, *photonDestinateDirection;
+    float *normPosition, *normDirection;
 
 
     variables(void);

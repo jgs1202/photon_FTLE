@@ -145,16 +145,14 @@ void biInter(float* tf, float* bf, float* tb, float* bb, float ratioy, float rat
 
 void ftle::trilinearTrace(float x, float y, float z, bool flag2D, float *gradient, float *opacity) {
     unsigned int p;
-    bool flagEnd;
 
     if ((x < 0) || (y < 0) | (z < 0) || (x >= data.WIDTH) || (y >= data.WIDTH) || (z >= data.WIDTH)) {
-        std::cout << "out of field in trilinearTrace\n";
+//        std::cout << "out of field in trilinearTrace\n";
         x = checkRange(x, data.WIDTH);
         y = checkRange(y, data.WIDTH);
         z = checkRange(z, data.WIDTH);
-        flagEnd = true;
         p = ((int) (x) + (int) (y) * data.WIDTH + (int) (z) * data.WIDTH * data.WIDTH);
-        opacity = &data.fOpacity2D[p];
+        *opacity = data.fOpacity2D[p];
     } else {
         float ltf[] = {floor(x), floor(y), floor(z)};
         float lbf[] = {floor(x), floor(y) + 1, floor(z)};
@@ -172,10 +170,22 @@ void ftle::trilinearTrace(float x, float y, float z, bool flag2D, float *gradien
         float tf[3], bf[3], tb[3], bb[3], t[3], b[3];
 
         //    reflectivity = fReflectivity[getScalarCoo(ltf)];
-        opacity = &data.fOpacity2D[pointerScalarCoordinateFloat(ltf, data.WIDTH)];
+        *opacity = data.fOpacity2D[pointerScalarCoordinateFloat(ltf, data.WIDTH)];
 
         if (flag2D) {
-            biInter(ltf, rtf, lbf, rbf, ratiox, ratioy, gradient);
+            tf[0] = data.grad2D[pointerVectorCoordinateFloat(ltf, data.WIDTH)];
+            tf[1] = data.grad2D[pointerVectorCoordinateFloat(ltf, data.WIDTH) + 1];
+            tf[2] = data.grad2D[pointerVectorCoordinateFloat(ltf, data.WIDTH) + 2];
+            bf[0] = data.grad2D[pointerVectorCoordinateFloat(rtf, data.WIDTH)];
+            bf[1] = data.grad2D[pointerVectorCoordinateFloat(rtf, data.WIDTH) + 1];
+            bf[2] = data.grad2D[pointerVectorCoordinateFloat(rtf, data.WIDTH) + 2];
+            tb[0] = data.grad2D[pointerVectorCoordinateFloat(lbf, data.WIDTH)];
+            tb[1] = data.grad2D[pointerVectorCoordinateFloat(lbf, data.WIDTH) + 1];
+            tb[2] = data.grad2D[pointerVectorCoordinateFloat(lbf, data.WIDTH) + 2];
+            bb[0] = data.grad2D[pointerVectorCoordinateFloat(rbf, data.WIDTH)];
+            bb[1] = data.grad2D[pointerVectorCoordinateFloat(rbf, data.WIDTH) + 1];
+            bb[2] = data.grad2D[pointerVectorCoordinateFloat(rbf, data.WIDTH) + 2];
+            biInter(tf, bf, tb, bb, ratiox, ratioy, gradient);
         } else {
             tf[0] = data.grad2D[pointerVectorCoordinateFloat(ltf, data.WIDTH)] * (1 - ratiox) +
                     data.grad2D[pointerVectorCoordinateFloat(rtf, data.WIDTH)] * ratiox;
@@ -214,16 +224,20 @@ void ftle::trace3d(int photon) {
     float dirx = data.photonDirection2D[photon * 3 + 0];
     float diry = data.photonDirection2D[photon * 3 + 1];
     float dirz = data.photonDirection2D[photon * 3 + 2];
-    float opacity = 0., path[3], calcStep = 2., square, newGradient[3], newOpacity;
+    float opacity = 0., path[3], calcStep = 3., square, newGradient[3], newOpacity;
 
-    while (!(x < 0) || !(x < 0) || !(z < 0)|| !(x >= data.WIDTH) || !(y >= data.WIDTH) || !(z >= data.WIDTH)){
+    while (!(x < 0) && !(y < 0) && !(z < 0)&& !(x >= data.WIDTH) && !(y >= data.WIDTH) && !(z >= data.WIDTH)){
         trilinearTrace(x, y, z, true, newGradient, &newOpacity);
-//        std::cout << newOpacity << std::endl;
         opacity += (1 - opacity) * newOpacity;
 
         newGradient[0] = newGradient[0] * 100 / data.WIDTH / calcStep;
         newGradient[1] = newGradient[1] * 100 / data.WIDTH / calcStep;
         newGradient[2] = newGradient[2] * 100 / data.WIDTH / calcStep;
+
+//        if (photon == (2224 * data.phaseNum + 0)) {
+//            std::cout << "[" << x << ", " << y << " " << z << "], " << newOpacity  << ", [" << dirx << ", " << diry << ", " << dirz << "], [" << newGradient[0] << ", " << newGradient[1] << ", " << newGradient[2] << "]\n";
+//        }
+//        std::cout << "[" << x << ", " << y << ", " << z << "], " << newOpacity << ", [" << dirx << ", " << diry << ", " << dirz << "], [" << newGradient[0] << ", " << newGradient[1] << ", " << newGradient[2] << "]\n";
 
         dirx += newGradient[0];
         diry += newGradient[1];

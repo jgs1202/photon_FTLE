@@ -158,7 +158,7 @@ float grady2D(float *around, int side) {
 void ftle::gradRefraction2D(void){
     for (unsigned int j=0; j<data.WIDTH; ++j){
         for (unsigned int i=0; i<data.WIDTH; ++i){
-            float around[] = {0, 0, 0, 0};
+            float around[] = {0., 0., 0., 0.};
             if (checkRangeInt2(i - 1, j - 1, data.WIDTH)) {
                 around[0] = data.fRefractivity2D[(i - 1) + (j - 1) * data.WIDTH];
             }
@@ -171,9 +171,12 @@ void ftle::gradRefraction2D(void){
             if (checkRangeInt2(i, j, data.WIDTH)) {
                 around[3] = data.fRefractivity2D[(i) + (j) * data.WIDTH];
             }
+//            std::cout << i << " " << j << " " << around[0] << around[1] << around[2] << around[3] << " " << gradx2D(around, data.WIDTH) << grady2D(around, data.WIDTH) << std::endl;
             data.grad2D[(i + j * data.WIDTH) * 3] = gradx2D(around, data.WIDTH);
             data.grad2D[(i + j * data.WIDTH) * 3 + 1] = grady2D(around, data.WIDTH);
             data.grad2D[(i + j * data.WIDTH) * 3 + 2] = 0.;
+
+            std::cout << i << " " << j << " " << data.fRefractivity2D[(i) + (j) * data.WIDTH] << " " << around[0] << " " << around[1] << " " << around[1] << " " << around[3] << " " << gradx2D(around, data.WIDTH) << " " << grady2D(around, data.WIDTH) << std::endl;
         }
     }
 }
@@ -181,7 +184,7 @@ void ftle::gradRefraction2D(void){
 void ftle::gradVectorField2D(float *data2D, std::vector<float>& norm){
     float gradxx, gradxy, gradyx, gradyy;
     for (unsigned int j=0; j<data.WIDTH; ++j){
-        for (unsigned int i=0; i<data.WIDTH; ++i){
+        for (unsigned int i=0; i<data.WIDTH; ++i) {
             float aroundx[] = {0, 0, 0, 0};
             float aroundy[] = {0, 0, 0, 0};
             float aroundz[] = {0, 0, 0, 0};
@@ -209,7 +212,11 @@ void ftle::gradVectorField2D(float *data2D, std::vector<float>& norm){
             gradxy = grady2D(aroundx, data.WIDTH);
             gradyx = gradx2D(aroundy, data.WIDTH);
             gradyy = grady2D(aroundy, data.WIDTH);
+
+//            std::cout << norm[i + j * data.WIDTH] << " ";
             norm[i + j * data.WIDTH] = normFlobenius22(gradxx, gradxy, gradyx, gradyy);
+//            std::cout << norm[i + j * data.WIDTH] << " ";
+
         }
     }
 }
@@ -242,15 +249,20 @@ void ftle::gradSmooth2D (unsigned int kernelSz){
                         }
                     }
                 }
-                newGrad[pointerVectorCoordinateInt(origin, data.WIDTH)] = newGrad[pointerVectorCoordinateInt(origin, data.WIDTH)] / count;
-                newGrad[pointerVectorCoordinateInt(origin, data.WIDTH) + 1] = newGrad[pointerVectorCoordinateInt(origin, data.WIDTH) + 1] / count;
+                if (count != 0) {
+                    newGrad[pointerVectorCoordinateInt(origin, data.WIDTH)] = newGrad[pointerVectorCoordinateInt(origin, data.WIDTH)] / count;
+                    newGrad[pointerVectorCoordinateInt(origin, data.WIDTH) + 1] = newGrad[pointerVectorCoordinateInt(origin, data.WIDTH) + 1] / count;
+                } else {
+                    newGrad[pointerVectorCoordinateInt(origin, data.WIDTH)] = 0.;
+                    newGrad[pointerVectorCoordinateInt(origin, data.WIDTH) + 1] = 0.;
+                }
             }
         }
     }
     for (int position=0; position<data.PLAINSZ * 3; ++position){
         data.grad2D[position] = newGrad[position];
     }
-    delete newGrad;
+    delete[] newGrad;
 }
 
 

@@ -127,10 +127,10 @@ float exponential(float x) {
 }
 
 float myabs(float x) {
-    if (x - floor(x) < 0.5) {
-        return floor(x);
+    if (x < 0) {
+        return -x;
     } else {
-        return floor(x + 1);
+        return x;
     }
 }
 

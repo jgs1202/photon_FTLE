@@ -19,6 +19,7 @@ public:
     // geoometry
     void surroundWall(void);
     void squareObject(void);
+    void sphereObject(void);
     void makeGeometry2D(void);
 
     // gradient
@@ -36,7 +37,12 @@ public:
     void photonDestinate(void);
 
     // visResult
+    void visualizeGrad2D(void);
+    void visualize2DAverage(void);
     void visualize2D(void);
+
+    // output data
+    void output(void);
 };
 
 #endif //FTLE_PHOTON_FTLE_H
