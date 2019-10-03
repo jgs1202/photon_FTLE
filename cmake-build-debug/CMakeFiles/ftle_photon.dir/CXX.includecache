@@ -6,17 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/Aoyama/CLionProjects/ftle-photon/ftle.h
-iostream
--
+/Users/Aoyama/CLionProjects/ftle-photon/variables.cpp
 variables.h
 /Users/Aoyama/CLionProjects/ftle-photon/variables.h
-
-/Users/Aoyama/CLionProjects/ftle-photon/output.cpp
-fstream
--
-ftle.h
-/Users/Aoyama/CLionProjects/ftle-photon/ftle.h
 
 /Users/Aoyama/CLionProjects/ftle-photon/variables.h
 iostream

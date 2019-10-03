@@ -228,21 +228,33 @@ void ftle::trace3d(int photon) {
 
     while (!(x < 0) && !(y < 0) && !(z < 0)&& !(x >= data.WIDTH) && !(y >= data.WIDTH) && !(z >= data.WIDTH)){
         trilinearTrace(x, y, z, true, newGradient, &newOpacity);
-        opacity += (1 - opacity) * newOpacity;
 
-        newGradient[0] = newGradient[0] * 100 / data.WIDTH / calcStep;
-        newGradient[1] = newGradient[1] * 100 / data.WIDTH / calcStep;
-        newGradient[2] = newGradient[2] * 100 / data.WIDTH / calcStep;
+        if (data.fReflectivity2D[(int)(x + y * data.WIDTH + z * data.WIDTH * data.WIDTH) == 1.]) {
+            // refrecttion
+            float normalizeN[3], projection[3], inpro, norm;
+            normalize3Vector(newGradient, normalizeN);
+            inpro = dirx * newGradient[0] + diry * newGradient[1] + dirz * newGradient[2];
+            if (inpro < 0) {
+                inpro = - inpro;
+            }
+            // the norm of normalizeN is 1
+            projection[0] = inpro * normalizeN[0];
+            projection[1] = inpro * normalizeN[1];
+            projection[2] = inpro * normalizeN[2];
 
-//        if (photon == (2224 * data.phaseNum + 0)) {
-//            std::cout << "[" << x << ", " << y << " " << z << "], " << newOpacity  << ", [" << dirx << ", " << diry << ", " << dirz << "], [" << newGradient[0] << ", " << newGradient[1] << ", " << newGradient[2] << "]\n";
-//        }
-//        std::cout << "[" << x << ", " << y << ", " << z << "], " << newOpacity << ", [" << dirx << ", " << diry << ", " << dirz << "], [" << newGradient[0] << ", " << newGradient[1] << ", " << newGradient[2] << "]\n";
+            dirx = dirx - 2 * projection[0];
+            diry = dirx - 2 * projection[1];
+            dirz = dirx - 2 * projection[2];
+        } else {
+            opacity += (1 - opacity) * newOpacity;
+            newGradient[0] = newGradient[0] * 100 / data.WIDTH / calcStep;
+            newGradient[1] = newGradient[1] * 100 / data.WIDTH / calcStep;
+            newGradient[2] = newGradient[2] * 100 / data.WIDTH / calcStep;
 
-        dirx += newGradient[0];
-        diry += newGradient[1];
-        dirz += newGradient[2];
-
+            dirx += newGradient[0];
+            diry += newGradient[1];
+            dirz += newGradient[2];
+        }
         square = dirx * dirx + diry * diry + dirz * dirz;
         path[0] = dirx / sqrt(square);
         path[1] = diry / sqrt(square);
@@ -252,7 +264,7 @@ void ftle::trace3d(int photon) {
         y = y + path[1] / calcStep;
         z = z + path[2] / calcStep;
 
-        if (myabs(opacity - 1.0) < 0.001){
+        if (myabs(opacity - 1.0) < 0.001) {
             break;
         }
     }

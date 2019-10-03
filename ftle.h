@@ -18,6 +18,7 @@ public:
 
     // geoometry
     void surroundWall(void);
+    void mirrorWall(void);
     void squareObject(void);
     void sphereObject(void);
     void makeGeometry2D(void);
@@ -29,6 +30,7 @@ public:
 
     // photonSetting
     void photonInit(void);
+    void photonInitGpu(void);
     void photonSetting(void);
 
     // photonParicipate

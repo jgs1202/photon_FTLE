@@ -137,3 +137,14 @@ float myabs(float x) {
 float normFlobenius22 (float a00, float a01, float a10, float a11) {
     return sqrt(a00 * a00 + a01 * a01 + a10 * a10 + a11 * a11);
 }
+
+void normalize3Vector(float *a, float *b) {
+    float norm = sqrt(a[0] * a[0] + a[1] * a[1] + a[2] * a[2]);
+    b[0] /= norm;
+    b[1] /= norm;
+    b[2] /= norm;
+}
+
+float norm3Vectoor(float *a) {
+    return sqrt(a[0] * a[0] + a[1] * a[1] + a[2] * a[2]);
+}

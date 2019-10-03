@@ -18,7 +18,7 @@ public:
     float shiftX, shiftY;
 
     int maxPhoton2D;
-    float *grad2D, *fColor2D, *fOpacity2D, *fRefractivity2D;
+    float *grad2D, *fColor2D, *fOpacity2D, *fRefractivity2D, *fReflectivity2D;
     float *lColor2D, *lDirection2D, *lIntensity2d;
     float *photonIrradiance2D, *photonPosition2D, *photonDirection2D, *photonGradDirection2D, *photonColor2D;
     float *photonDestinatePosition, *photonDestinateDirection;

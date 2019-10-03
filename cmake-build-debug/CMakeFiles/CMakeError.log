@@ -1,20 +1,20 @@
 Determining if the CL_VERSION_2_2 exist failed with the following output:
 Change Dir: /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_52d7d/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_52d7d.dir/build.make CMakeFiles/cmTC_52d7d.dir/build
-Building C object CMakeFiles/cmTC_52d7d.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_52d7d.dir/CheckSymbolExists.c.o   -c /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command:"/usr/bin/make" "cmTC_930e4/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_930e4.dir/build.make CMakeFiles/cmTC_930e4.dir/build
+Building C object CMakeFiles/cmTC_930e4.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc  -F/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_930e4.dir/CheckSymbolExists.c.o   -c /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_2'
   return ((int*)(&CL_VERSION_2_2))[argc];
                   ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_52d7d.dir/CheckSymbolExists.c.o] Error 1
-make[1]: *** [cmTC_52d7d/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_930e4.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_930e4/fast] Error 2
 
 File /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
-#include </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+#include </Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
 
 int main(int argc, char** argv)
 {
@@ -30,20 +30,20 @@ int main(int argc, char** argv)
 Determining if the CL_VERSION_2_1 exist failed with the following output:
 Change Dir: /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0c631/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0c631.dir/build.make CMakeFiles/cmTC_0c631.dir/build
-Building C object CMakeFiles/cmTC_0c631.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_0c631.dir/CheckSymbolExists.c.o   -c /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command:"/usr/bin/make" "cmTC_dd472/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_dd472.dir/build.make CMakeFiles/cmTC_dd472.dir/build
+Building C object CMakeFiles/cmTC_dd472.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc  -F/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_dd472.dir/CheckSymbolExists.c.o   -c /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_1'
   return ((int*)(&CL_VERSION_2_1))[argc];
                   ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_0c631.dir/CheckSymbolExists.c.o] Error 1
-make[1]: *** [cmTC_0c631/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_dd472.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_dd472/fast] Error 2
 
 File /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
-#include </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+#include </Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
 
 int main(int argc, char** argv)
 {
@@ -59,20 +59,20 @@ int main(int argc, char** argv)
 Determining if the CL_VERSION_2_0 exist failed with the following output:
 Change Dir: /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e1ed4/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e1ed4.dir/build.make CMakeFiles/cmTC_e1ed4.dir/build
-Building C object CMakeFiles/cmTC_e1ed4.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_e1ed4.dir/CheckSymbolExists.c.o   -c /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command:"/usr/bin/make" "cmTC_8d818/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_8d818.dir/build.make CMakeFiles/cmTC_8d818.dir/build
+Building C object CMakeFiles/cmTC_8d818.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc  -F/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk   -o CMakeFiles/cmTC_8d818.dir/CheckSymbolExists.c.o   -c /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_0'
   return ((int*)(&CL_VERSION_2_0))[argc];
                   ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_e1ed4.dir/CheckSymbolExists.c.o] Error 1
-make[1]: *** [cmTC_e1ed4/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_8d818.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_8d818/fast] Error 2
 
 File /Users/Aoyama/CLionProjects/ftle-photon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
-#include </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+#include </Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
 
 int main(int argc, char** argv)
 {

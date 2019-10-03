@@ -8,7 +8,7 @@ variables::variables() {
     WIDTH = 100;
     FIELDSZ = WIDTH * WIDTH * WIDTH, PLAINSZ = WIDTH * WIDTH;
     viewH = WIDTH, viewW = WIDTH, PLATFORM_MAX = 4, DEVICE_MAX = 4;
-    phaseNum = 16;
+    phaseNum = 200;
     updateState = true, dragState = false;
     animationCount = 0, xBegin = 0, yBegin = 0, mButton = 0;
     shiftX = 0., shiftY = 0.;
@@ -18,6 +18,7 @@ variables::variables() {
     fColor2D = (float *)malloc(sizeof(float) * PLAINSZ * 3);
     fOpacity2D  = (float *)malloc(sizeof(float) * PLAINSZ);
     fRefractivity2D = (float *)malloc(sizeof(float) * PLAINSZ);
+    fReflectivity2D = (float *)malloc(sizeof(float) * PLAINSZ);
     lColor2D = (float *)malloc(sizeof(float) * PLAINSZ * 3);
     lDirection2D = (float *)malloc(sizeof(float) * PLAINSZ * 3);
     lIntensity2d = (float *)malloc(sizeof(float) * PLAINSZ);

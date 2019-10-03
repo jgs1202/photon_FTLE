@@ -176,7 +176,7 @@ void ftle::gradRefraction2D(void){
             data.grad2D[(i + j * data.WIDTH) * 3 + 1] = grady2D(around, data.WIDTH);
             data.grad2D[(i + j * data.WIDTH) * 3 + 2] = 0.;
 
-            std::cout << i << " " << j << " " << data.fRefractivity2D[(i) + (j) * data.WIDTH] << " " << around[0] << " " << around[1] << " " << around[1] << " " << around[3] << " " << gradx2D(around, data.WIDTH) << " " << grady2D(around, data.WIDTH) << std::endl;
+//            std::cout << i << " " << j << " " << data.fRefractivity2D[(i) + (j) * data.WIDTH] << " " << around[0] << " " << around[1] << " " << around[1] << " " << around[3] << " " << gradx2D(around, data.WIDTH) << " " << grady2D(around, data.WIDTH) << std::endl;
         }
     }
 }
