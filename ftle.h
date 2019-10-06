@@ -27,8 +27,9 @@ public:
     void gradRefraction2D(void);
     void gradSmooth2D(unsigned int kernelSz);
     void gradVectorField2D(float *data2D, std::vector<float>& norm);
+    void normJacob3(std::vector<float>& norm);
 
-    // photonSetting
+        // photonSetting
     void photonInit(void);
     void photonInitGpu(void);
     void photonSetting(void);

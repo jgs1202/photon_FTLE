@@ -13,61 +13,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9a346af3-cf90-497b-b41d-7846a3abe406" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/ftle.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/ftle.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/geometry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/geometry.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/gpuSetting.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/gradient.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/gradient.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/myMath.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/myMath.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/output.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/output.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/photonParticipate.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/photonSetting.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/photonSetting.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/variables.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/variables.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/visResult.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ftle_photon.dir/visResult.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ftle_photon" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ftle_photon" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ftle_photon.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ftle_photon.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ftle.h" beforeDir="false" afterPath="$PROJECT_DIR$/ftle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/geometry.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gradient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/averageFTLE.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/averageFTLE.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/grad2D.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/grad2D.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-11.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-12.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-13.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-14.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-15.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phase-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/phase-9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/totalFTLE.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/totalFTLE.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myMath.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myMath.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myMath.h" beforeDir="false" afterPath="$PROJECT_DIR$/myMath.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/output.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/normOfGradient.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/normOfGradient.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photonParticipate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/photonParticipate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photonSetting.cl" beforeDir="false" afterPath="$PROJECT_DIR$/photonSetting.cl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photonSetting.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/photonSetting.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/variables.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables.h" beforeDir="false" afterPath="$PROJECT_DIR$/variables.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,17 +57,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/variables.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="450">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gradient.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
+            <state relative-caret-position="228">
+              <caret line="334" column="13" selection-start-line="334" selection-start-column="13" selection-end-line="334" selection-end-column="13" />
               <folding>
                 <element signature="e#43#62#0" expanded="true" />
               </folding>
@@ -125,10 +76,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myMath.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1684">
+              <caret line="148" column="14" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="14" />
+              <folding>
+                <element signature="e#44#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myMath.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ftle.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="435">
+              <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
               <folding>
                 <element signature="e#98#117#0" expanded="true" />
               </folding>
@@ -139,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photonParticipate.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="281" column="10" selection-start-line="281" selection-start-column="7" selection-end-line="281" selection-end-column="10" />
+            <state relative-caret-position="3690">
+              <caret line="246" column="44" selection-start-line="246" selection-start-column="44" selection-end-line="246" selection-end-column="44" />
               <folding>
                 <element signature="e#43#62#0" expanded="true" />
               </folding>
@@ -148,11 +120,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photonSetting.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="1365">
+              <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+              <folding>
+                <element signature="e#43#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,13 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>coordinate</find>
-      <find>checkrangein</find>
-      <find>checkRan</find>
-      <find>std::</find>
-      <find>getCoordinate</find>
-      <find>refrac</find>
-      <find>vector</find>
       <find>abs</find>
       <find>HEIGHT</find>
       <find>checkRangeInt2</find>
@@ -183,7 +151,6 @@
       <find>memset</find>
       <find>photon</find>
       <find>destinat</find>
-      <find>norm</find>
       <find>photondestina</find>
       <find>fRefrac</find>
       <find>gradvecgor</find>
@@ -191,15 +158,23 @@
       <find>destin</find>
       <find>cout</find>
       <find>setting</find>
+      <find>WIDTH</find>
+      <find>slope</find>
+      <find>checkrangeInt2</find>
+      <find>checkrangeInt</find>
+      <find>,</find>
+      <find>norm</find>
+      <find>normalize</find>
+      <find>set</find>
     </findStrings>
     <replaceStrings>
       <replace>PLAINSZ</replace>
       <replace>data.grad2D</replace>
       <replace>pointerScalarCoordinateFloat</replace>
       <replace>pointerVectorCoordinateFloat</replace>
-      <replace>data.WIDTH</replace>
       <replace>data.HEIGHT</replace>
       <replace>magnify</replace>
+      <replace>data.WIDTH</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -214,23 +189,24 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/visResult.cpp" />
         <option value="$PROJECT_DIR$/variables.h" />
-        <option value="$PROJECT_DIR$/myMath.cpp" />
-        <option value="$PROJECT_DIR$/myMath.h" />
         <option value="$PROJECT_DIR$/photonParticipate.cpp" />
         <option value="$PROJECT_DIR$/geometry.cpp" />
         <option value="$PROJECT_DIR$/output.cpp" />
-        <option value="$PROJECT_DIR$/gradient.cpp" />
         <option value="$PROJECT_DIR$/variables.cpp" />
-        <option value="$PROJECT_DIR$/ftle.h" />
+        <option value="$PROJECT_DIR$/photonSetting.cl" />
         <option value="$PROJECT_DIR$/photonSetting.cpp" />
+        <option value="$PROJECT_DIR$/myMath.cpp" />
+        <option value="$PROJECT_DIR$/myMath.h" />
+        <option value="$PROJECT_DIR$/ftle.h" />
+        <option value="$PROJECT_DIR$/gradient.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="392" />
+    <option name="x" value="669" />
     <option name="y" value="23" />
-    <option name="width" value="1288" />
+    <option name="width" value="1011" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -303,23 +279,24 @@
       <workItem from="1569489554609" duration="563000" />
       <workItem from="1569545191391" duration="2624000" />
       <workItem from="1569566646151" duration="223000" />
-      <workItem from="1569647983559" duration="3116000" />
+      <workItem from="1569647983559" duration="4247000" />
+      <workItem from="1570333727494" duration="5595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73969000" />
+    <option name="totallyTimeSpent" value="80695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="392" y="23" width="1288" height="1027" extended-state="0" />
+    <frame x="669" y="23" width="1011" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20419255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26013848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23953974" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23953974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -365,11 +342,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/photonParticipate.cpp</url>
-          <line>173</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios</url>
           <line>171</line>
           <option name="timeStamp" value="3" />
@@ -404,13 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myMath.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -462,23 +427,6 @@
     <entry file="file://$PROJECT_DIR$/image/grad2D.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
-          <folding>
-            <element signature="e#43#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/variables.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geometry.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -486,33 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ftle.h">
+    <entry file="file://$PROJECT_DIR$/photonSetting.cl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-          <folding>
-            <element signature="e#98#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photonParticipate.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="281" column="10" selection-start-line="281" selection-start-column="7" selection-end-line="281" selection-end-column="10" />
-          <folding>
-            <element signature="e#43#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -526,20 +451,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/photonSetting.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+          <folding>
+            <element signature="e#43#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/variables.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myMath.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ftle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="e#98#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myMath.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="147" column="10" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="10" />
+        <state relative-caret-position="1684">
+          <caret line="148" column="14" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="14" />
           <folding>
             <element signature="e#44#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photonSetting.cpp">
+    <entry file="file://$PROJECT_DIR$/photonParticipate.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="3690">
+          <caret line="246" column="44" selection-start-line="246" selection-start-column="44" selection-end-line="246" selection-end-column="44" />
+          <folding>
+            <element signature="e#43#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradient.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="334" column="13" selection-start-line="334" selection-start-column="13" selection-end-line="334" selection-end-column="13" />
+          <folding>
+            <element signature="e#43#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

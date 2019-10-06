@@ -25,6 +25,24 @@ bool checkRangeInt2(int x, int y, int side){
     }
 }
 
+bool checkRangeFloat2(float x, float y, int side){
+    if ((checkRangeFloat(x, side)) && (checkRangeFloat(y, side))){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+float normalizeVec2x(float x, float y) {
+    float square = x * x + y * y;
+    return x / sqrt(square);
+}
+
+float normalizeVec2y(float x, float y) {
+    float square = x * x + y * y;
+    return y / sqrt(square);
+}
+
 float gradx(float *around, int WIDTH) {
     float a[4] = {0, 0, 0, 0}, x1, x2;
     int count = 0;
@@ -217,6 +235,105 @@ void ftle::gradVectorField2D(float *data2D, std::vector<float>& norm){
             norm[i + j * data.WIDTH] = normFlobenius22(gradxx, gradxy, gradyx, gradyy);
 //            std::cout << norm[i + j * data.WIDTH] << " ";
 
+        }
+    }
+}
+
+void ftle::normJacob3(std::vector<float>& norm){
+    float gradxx, gradxy, gradxt, gradyx, gradyy, gradyt, gradtx, gradty, gradtt, tmp0, tmp1;
+    for (unsigned int j=0; j<data.WIDTH; ++j){
+        for (unsigned int i=0; i<data.WIDTH; ++i) {
+
+            // x differential
+            if (checkRangeInt2(i-1, j, data.WIDTH) && checkRangeInt2(i, j, data.WIDTH)) {
+                tmp0 = data.photonDestinatePosition[((i - 1) + j * data.WIDTH) * 3 + 0];
+                tmp1 = data.photonDestinatePosition[(i + j * data.WIDTH) * 3 + 0];
+                gradxx = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+
+                tmp0 = data.photonDestinatePosition[((i - 1) + j * data.WIDTH) * 3 + 1];
+                tmp1 = data.photonDestinatePosition[(i + j * data.WIDTH) * 3 + 1];
+                gradyx = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+
+                tmp0 = data.photonDestinateDirection[((i - 1) + j * data.WIDTH) * 3 + 0] /  data.photonDestinateDirection[((i - 1) + j * data.WIDTH) * 3 + 1];
+                tmp1 = data.photonDestinateDirection[(i + j * data.WIDTH) * 3 + 0] / data.photonDestinateDirection[(i + j * data.WIDTH) * 3 + 1];
+                gradtx = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+            } else {
+                gradxx = 0.;
+                gradyx = 0.;
+                gradtx = 0.;
+            }
+
+            // y differential
+            if (checkRangeInt2(i, j - 1, data.WIDTH) && checkRangeInt2(i, j, data.WIDTH)) {
+                tmp0 = data.photonDestinatePosition[(i + (j - 1) * data.WIDTH) * 3 + 0];
+                tmp1 = data.photonDestinatePosition[(i + j * data.WIDTH) * 3 + 0];
+                gradxy = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+
+                tmp0 = data.photonDestinatePosition[(i + (j - 1) * data.WIDTH) * 3 + 1];
+                tmp1 = data.photonDestinatePosition[(i + j * data.WIDTH) * 3 + 1];
+                gradyy = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+
+                tmp0 = data.photonDestinateDirection[(i + (j - 1) * data.WIDTH) * 3 + 0] /  data.photonDestinateDirection[(i + (j - 1) * data.WIDTH) * 3 + 1];
+                tmp1 = data.photonDestinateDirection[(i + j * data.WIDTH) * 3 + 0] / data.photonDestinateDirection[(i + j * data.WIDTH) * 3 + 1];
+                gradty = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+            } else {
+                gradxy = 0.;
+                gradyy = 0.;
+                gradty = 0.;
+            }
+
+            // theta differential
+            float cx, cy, dx, dy;
+            dx = data.photonDestinateDirection[(i + j * data.WIDTH) * 3 + 0];
+            dy = data.photonDestinateDirection[(i + j * data.WIDTH) * 3 + 1];
+            dx = normalizeVec2x(dx, dy);
+            dy = normalizeVec2y(dx, dy);
+            cx = (float)i - dx;
+            cy = (float)j - dy;
+
+            if (checkRangeFloat2(cx, cy, data.WIDTH)) {
+                int x0, x1, y0, y1;
+                float vx0y0, vx0y1, vx1y0, vx1y1, ratiox, ratioy;
+                x0 = (int)cx;
+                x1 = x0 + 1;
+                y0 = (int)cy;
+                y1 = y0 + 1;
+                ratiox = cx - x0;
+                ratioy = cy - y0;
+
+                vx0y0 = data.photonDestinatePosition[(x0 + y0 * data.WIDTH ) * 3 + 0];
+                vx0y1 = data.photonDestinatePosition[(x0 + y1 * data.WIDTH ) * 3 + 0];
+                vx1y0 = data.photonDestinatePosition[(x1 + y0 * data.WIDTH ) * 3 + 0];
+                vx1y1 = data.photonDestinatePosition[(x1 + y1 * data.WIDTH ) * 3 + 0];
+                tmp0 = vx0y0 * (1 - ratiox) + vx1y0 * ratiox;
+                tmp1 = vx0y1 * (1 - ratiox) + vx1y1 * ratiox;
+                tmp0 = tmp0 * (1 - ratioy) + tmp1 * ratioy;
+                tmp1 = data.photonDestinatePosition[(i + j * data.WIDTH) * 3 + 0];
+                gradxt = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+
+                vx0y0 = data.photonDestinatePosition[(x0 + y0 * data.WIDTH ) * 3 + 1];
+                vx0y1 = data.photonDestinatePosition[(x0 + y1 * data.WIDTH ) * 3 + 1];
+                vx1y0 = data.photonDestinatePosition[(x1 + y0 * data.WIDTH ) * 3 + 1];
+                vx1y1 = data.photonDestinatePosition[(x1 + y1 * data.WIDTH ) * 3 + 1];
+                tmp0 = vx0y0 * (1 - ratiox) + vx1y0 * ratiox;
+                tmp1 = vx0y1 * (1 - ratiox) + vx1y1 * ratiox;
+                tmp0 = tmp0 * (1 - ratioy) + tmp1 * ratioy;
+                tmp1 = data.photonDestinatePosition[(i + j * data.WIDTH) * 3 + 1];
+                gradyt = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+
+                vx0y0 = data.photonDestinateDirection[(x0 + y0 * data.WIDTH ) * 3 + 0] / data.photonDestinateDirection[(x0 + y0 * data.WIDTH ) * 3 + 1];
+                vx0y1 = data.photonDestinateDirection[(x0 + y1 * data.WIDTH ) * 3 + 0] / data.photonDestinateDirection[(x0 + y1 * data.WIDTH ) * 3 + 1];
+                vx1y0 = data.photonDestinateDirection[(x1 + y0 * data.WIDTH ) * 3 + 0] / data.photonDestinateDirection[(x1 + y0 * data.WIDTH ) * 3 + 1];
+                vx1y1 = data.photonDestinateDirection[(x1 + y1 * data.WIDTH ) * 3 + 0] / data.photonDestinateDirection[(x1 + y1 * data.WIDTH ) * 3 + 1];
+                tmp0 = vx0y0 * (1 - ratiox) + vx1y0 * ratiox;
+                tmp1 = vx0y1 * (1 - ratiox) + vx1y1 * ratiox;
+                tmp0 = tmp0 * (1 - ratioy) + tmp1 * ratioy;
+                tmp1 = data.photonDestinatePosition[(i + j * data.WIDTH) * 3 + 0];
+                gradtt = (tmp1 - tmp0) / (100 / (float)data.WIDTH);
+            } else {
+                std::cout << "error in theta differential\n";
+            }
+            norm[i + j * data.WIDTH] = sqrt(gradxx * gradxx + gradxy * gradxy + gradxt * gradxt + gradyx * gradyx + gradyy * gradyy + gradyt * gradyt + gradtx * gradtx + gradty * gradty + gradtt * gradtt);
         }
     }
 }

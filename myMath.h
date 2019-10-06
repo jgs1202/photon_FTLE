@@ -31,5 +31,6 @@ float myabs(float x);
 float normFlobenius22 (float a00, float a01, float a10, float a11);
 void normalize3Vector(float *a, float *b);
 float norm3Vectoor(float *a);
+bool checkRangeFloat(float x, int side);
 
 #endif //REFRACTION_OPENCL_MYMATH_H

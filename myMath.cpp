@@ -95,6 +95,14 @@ bool checkRangeInt(int x, int side){
     }
 }
 
+bool checkRangeFloat(float x, int side){
+    if ((x >= 0) && (x < (float)side)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 bool checkPosition(int x, int y, int z, int side) {
     if ((x < 0) || (x >= side)){
         return false;
